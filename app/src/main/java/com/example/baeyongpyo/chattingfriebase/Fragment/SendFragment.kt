@@ -1,10 +1,14 @@
-package com.example.baeyongpyo.chattingfriebase
+package com.example.baeyongpyo.chattingfriebase.Fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.baeyongpyo.chattingfriebase.DB.ChatDB
+import com.example.baeyongpyo.chattingfriebase.R
+import com.example.baeyongpyo.chattingfriebase.Util.fireBaseWrite
+import com.example.baeyongpyo.chattingfriebase.Util.getCategoryName
 import kotlinx.android.synthetic.main.fragment_chat_write.*
 
 class SendFragment : Fragment(){

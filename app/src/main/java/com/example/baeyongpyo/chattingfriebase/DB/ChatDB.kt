@@ -1,4 +1,6 @@
-package com.example.baeyongpyo.chattingfriebase
+package com.example.baeyongpyo.chattingfriebase.DB
+
+import com.example.baeyongpyo.chattingfriebase.Util.getNowDateInfo
 
 
 data class ChatDB(var fireBaseKey : String? = null,

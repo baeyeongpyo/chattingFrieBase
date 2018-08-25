@@ -23,9 +23,7 @@
         android:layout_width="@dimen/send_button_size"
         android:layout_height="@dimen/default_height_size"
         android:text="@string/sendButton"
-        app:layout_constraintStart_toEndOf="@id/firebase_wirte_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@id/firebase_wirte_edit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/firebase_wirte_edit" />
 </android.support.constraint.ConstraintLayout>
