@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">chattingFrieBase</string>
+    <string name="sendButton">전송</string>
 </resources>
