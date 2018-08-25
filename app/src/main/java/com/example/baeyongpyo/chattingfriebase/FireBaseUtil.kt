@@ -10,3 +10,5 @@ fun fireBaseWrite(category: String, message: ChatDB) = FirebaseDatabase.getInsta
     }
 }
 
+fun getCategoryName() : String = "Message"
+
