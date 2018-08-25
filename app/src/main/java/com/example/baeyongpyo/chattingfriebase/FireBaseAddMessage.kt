@@ -16,7 +16,9 @@ class FireBaseAddMessage : ChildEventListener {
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
-        Log.i("TEST child", p0.getValue(String::class.java) + "!@#$")
+        val sendDataForm = p0.getValue(ChatDB::class.java)
+        sendDataForm?.fireBaseKey
+
     }
 
     override fun onChildAdded(p0: DataSnapshot, p1: String?) {

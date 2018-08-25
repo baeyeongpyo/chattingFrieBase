@@ -17,11 +17,9 @@ class SendFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         firebase_wirte_button.setOnClickListener {
             val editText = firebase_wirte_edit.text.toString()
-            fireBaseWrite(category, editText)
-
+            fireBaseWrite(category, ChatDB(user = "testuser", message = editText))
         }
     }
 }

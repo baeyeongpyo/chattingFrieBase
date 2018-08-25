@@ -23,14 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         FirebaseDatabase.getInstance().getReference("Message").addChildEventListener(FireBaseAddMessage())
 
-        val addValueEventListener = FirebaseDatabase.getInstance().getReference("Message").addValueEventListener(
+        FirebaseDatabase.getInstance().getReference("Message").addValueEventListener(
                 object : ValueEventListener {
                     override fun onCancelled(p0: DatabaseError) {
-                        Log.w(TAG, p0.toException())
+//                        Log.w(TAG, p0.toException())
                     }
 
                     override fun onDataChange(p0: DataSnapshot) {
-                        Log.i(TAG, p0.getValue(String::class.java))
+//                        Log.i(TAG, p0.getValue(String::class.java))
 
                     }
                 })
