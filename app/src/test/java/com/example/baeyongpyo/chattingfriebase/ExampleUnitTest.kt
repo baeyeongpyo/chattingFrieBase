@@ -18,5 +18,12 @@ class ExampleUnitTest {
 
         val nowdate = SimpleDateFormat("YY_MM_dd HH:mm:ss").format(Date(System.currentTimeMillis()))
         println(nowdate)
+
+        val A = SimpleDateFormat("YY_MM_dd HH:mm:ss").parse(nowdate)
+
+        val nowdata2 = SimpleDateFormat("mm:ss").format(A)
+
+        println(nowdata2)
+
     }
 }

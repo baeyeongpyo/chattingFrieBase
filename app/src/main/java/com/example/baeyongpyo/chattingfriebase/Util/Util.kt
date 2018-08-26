@@ -14,3 +14,5 @@ fun AppCompatActivity.replace(@IdRes frameId : Int, fragment : Fragment, tag : S
 }
 
 fun getNowDateInfo() : String = SimpleDateFormat("YY_MM_dd HH:mm:ss").format(Date(System.currentTimeMillis()))
+
+fun chageDateToTime(date : String) = SimpleDateFormat("HH:mm").format(SimpleDateFormat("YY_MM_dd HH:mm:ss").parse(date))

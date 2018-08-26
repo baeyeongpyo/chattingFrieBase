@@ -17,6 +17,5 @@ class ReceiveListFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         firebase_chat_data_rv.adapter = FireBaseReceiveListAdapter()
-
     }
 }

@@ -1,5 +1,6 @@
 package com.example.baeyongpyo.chattingfriebase.adapter
 
+import android.support.annotation.IdRes
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -33,15 +34,15 @@ class FireBaseReceiveListAdapter : RecyclerView.Adapter<ViewHolder>(){
         holder.run {
             userTextView.text = getdata.user
             msgTextView.text = getdata.message
-            timeTextview.text = getdata.time
+            timeTextview.text = getdata.getTimeInfo()
         }
     }
 }
 
 class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
-    val userTextView = view.findview(R.id.firebase_receive_user_id)
-    val msgTextView = view.findview(R.id.firebase_receive_msg)
-    val timeTextview = view.findview(R.id.firebase_receive_time)
+    val userTextView : TextView = view.findview(R.id.firebase_receive_user_id)
+    val msgTextView : TextView = view.findview(R.id.firebase_receive_msg)
+    val timeTextview : TextView = view.findview(R.id.firebase_receive_time)
 
-    private fun View.findview(Id : Int) = findViewById<TextView>(Id)
+    private fun View.findview(@IdRes Id : Int) = findViewById<TextView>(Id)
 }
